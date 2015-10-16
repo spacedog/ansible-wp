@@ -1,3 +1,5 @@
 ---
 # Install wp and dependencies
 - include: install.yml
+# Create wp-config.php file
+- include: config.yml

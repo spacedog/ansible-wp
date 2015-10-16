@@ -1,4 +1,13 @@
 ---
+wp_salt_static:
+  AUTH_KEY: 'W&u^]NUb4)etrD0eY`#nphr=?jt|;v_2R@.[U 2bGe652m@ub.Iw&<dUou=:puUs'
+  SECURE_AUTH_KEY: 'X`33ff/m##ZPpTFLnVl[I:LUR=Gw^z}_p[2?+eN)`|/&s`Q|[D/QciZng:N<dh 9'
+  LOGGED_IN_KEY: 'JFA3NNGif=[9jBAGC0*tZ!q%!s-h`.wNyWa0c5r_el&ukouZAJaMOW&Om8{y*uF='
+  NONCE_KEY: 'h2hHI^{~mO=1k{>gp|;![^;`&j3,HsF(rjhB6;J-|w`47n.h:NEANZodvT)8X][+'
+  AUTH_SALT: '*:;zw,z^>)=yv{SR:hW<!&cKm)g|I0:xhNQ`}|hP3]wtsX,O3g]8:u)JBW`g|BI>'
+  SECURE_AUTH_SALT: '<mliO)7~jxu,:)QhfuK8xqo?7?S:m({clQs|A|FZcIrB|[vn$,=]r0|Z#Wu4Y|L('
+  LOGGED_IN_SALT: 'Rn`r VOWrMH5VtRYm, C?,}I%P,pCS=963kj(g0#yo&+H;>^|&2SAyp9#sz#6g0V'
+  NONCE_SALT: 'mnk5GMzj))*g}7lgaM}7n`i&_#B+[,^$v01+rs-Un,#=nkuaQ|Q{4Gs7{B~rmj|0'
 wp_owner: apache
 wp_group: apache
 wp_source_dir: /opt/source/wordpress

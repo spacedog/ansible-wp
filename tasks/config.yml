@@ -1,0 +1,15 @@
+---
+- name: Create auth keys and salts using WP api
+  command: "curl https://api.wordpress.org/secret-key/1.1/salt/"
+  delegate_to: 127.0.0.1
+  sudo: no
+  register: wp_salt
+  when: not wp_salt_static
+
+- name: Create configuration file
+  template:
+    src=wp-config-sample.php.j2
+    dest="{{ wp_dest_dir}}/wordpress/wp-config.php"
+    owner={{ wp_owner }}
+    group={{ wp_group }}
+    mode=0640
