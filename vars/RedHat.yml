@@ -1,4 +1,4 @@
 ---
 wp_packages:
-  - php5
-  - php5-mysql
+  - php
+  - php-mysql
