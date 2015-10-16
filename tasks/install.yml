@@ -1,10 +1,10 @@
 ---
+#
+- include_vars: "{{ansible_os_family}}.yml"
 # Install latest wordpress and dependencies
 - name: Install dependencies for WordPress
   action: "{{ ansible_pkg_mgr }} state=installed name={{ item }}"
-  with_items:
-        - php
-        - php-mysql
+  with_items: wp_packages
 
 - name: Create source directory
   file:
