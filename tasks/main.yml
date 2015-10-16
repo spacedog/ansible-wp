@@ -1,2 +1,3 @@
 ---
-# tasks file for wp
+# Install wp and dependencies
+- include: install.yml

@@ -1,2 +1,7 @@
 ---
-# defaults file for wp
+wp_source_dir: /opt/source/wordpress
+wp_dest_dir: /var/www/html
+wp_mysql_admin: root
+wp_mysql_dbhost: 'localhost'
+wp_mysql_db: "wp_{{ansible_hostname}}"
+wp_mysql_user: wp_admin

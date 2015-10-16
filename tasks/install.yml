@@ -1,0 +1,30 @@
+---
+# Install latest wordpress and dependencies
+- name: Install dependencies for WordPress
+  yum: name={{ item }} state=present
+  with_items:
+        - php
+        - php-mysql
+
+- name: Create source directory
+  file: 
+    path={{ item }}
+    state=directory
+  with_items:
+    - wp_source_dir
+    - wp_dest_dir
+
+- name: Download Wordpress
+  get_url: 
+    url="https://www.wordpress.org/latest.tar.gz" 
+    dest="{{ wp_source_dir }}/wordpress.tar.gz" 
+    validate_certs=no
+
+- name: Extract Wordpress
+  unarchive: 
+    copy=no
+    src="{{ wp_source_dir }}/wordpress.tar.gz"
+    dest={{ wp_dest_dir }}
+    creates="{{ wp_dest_dir }}/wordpress"
+
+
