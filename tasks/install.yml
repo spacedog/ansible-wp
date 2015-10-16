@@ -25,6 +25,14 @@
     copy=no
     src="{{ wp_source_dir }}/wordpress.tar.gz"
     dest={{ wp_dest_dir }}
+    owner={{ wp_owner }}
+    group={{ wp_group }}
     creates="{{ wp_dest_dir }}/wordpress"
 
-
+- name: Change ownership for wp-content directory
+  file:
+    path="{{ wp_dest_dir }}/wp-content"
+    state=directory
+    owner={{ wp_owner }}
+    group={{ wp_group }}
+    mode=0755

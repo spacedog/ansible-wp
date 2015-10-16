@@ -1,4 +1,6 @@
 ---
+wp_owner: apache
+wp_group: apache
 wp_source_dir: /opt/source/wordpress
 wp_dest_dir: /var/www/html
 wp_mysql_admin: root
