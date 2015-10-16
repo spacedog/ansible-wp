@@ -11,5 +11,6 @@
       SECURE_AUTH_SALT: 'put your unique phrase here'
       LOGGED_IN_SALT: 'put your unique phrase here'
       NONCE_SALT: 'put your unique phrase here'
+    wp_mysql_password: 'somepassword'
   roles:
     - ansible-wp
