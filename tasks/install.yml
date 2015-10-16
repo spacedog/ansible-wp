@@ -11,8 +11,8 @@
     path={{ item }}
     state=directory
   with_items:
-    - wp_source_dir
-    - wp_dest_dir
+    - "{{wp_source_dir}}"
+    - "{{wp_dest_dir}}"
 
 - name: Download Wordpress
   get_url:
