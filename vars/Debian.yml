@@ -2,3 +2,6 @@
 wp_packages:
   - php5
   - php5-mysql
+
+wp_owner: nobody
+wp_group: nogroup
