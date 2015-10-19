@@ -1,4 +1,6 @@
 ---
+# Include vars
+- include_vars: "{{ansible_os_family}}.yml"
 # Install wp and dependencies
 - include: install.yml
 # Create wp-config.php file

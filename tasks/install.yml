@@ -1,6 +1,5 @@
 ---
 #
-- include_vars: "{{ansible_os_family}}.yml"
 # Install latest wordpress and dependencies
 - name: Install | Install dependencies for WordPress
   action: "{{ ansible_pkg_mgr }} state=installed name={{ item }}"
